@@ -1,0 +1,23 @@
+p{
+    border: 5px solid;
+}
+
+#p1{
+    border-color: maroon;
+    margin: 0px;
+    padding: 0px;
+}
+#p2{
+    border-color: mediumaquamarine;
+    margin: 5px;
+    padding: 5px;
+}
+#p3{
+    border-color:magenta;
+    margin: 0px;
+    padding: 20px;
+}
+body{
+
+    margin: 0px;
+}
