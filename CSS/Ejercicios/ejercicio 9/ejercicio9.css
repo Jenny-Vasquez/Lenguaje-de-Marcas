@@ -1,0 +1,37 @@
+#cabecera{
+    background-color: azure;
+    height: 100px;
+    border:1px solid black;
+    border-style: dashed;
+    padding: 9px;
+}
+#cabecera h1{
+    float: left;
+}
+#cabecera img {
+    float: right
+}
+#columna1{
+    background-color: wheat;
+    float: left;
+    width:70%;
+    height: 100%;
+    border: 1px solid wheat;
+    padding: 9px;
+}
+#columna2{
+    background-color:greenyellow;
+    float: right;
+    width: 20%;
+    height: 100%;
+    border:1px solid greenyellow;
+    padding: 9px;
+}
+#pie{
+    background-color: aquamarine;
+    clear: both;
+    width: 100%;
+    height: 50px;
+    border:1px solid aquamarine;
+    padding:  9px;
+}
