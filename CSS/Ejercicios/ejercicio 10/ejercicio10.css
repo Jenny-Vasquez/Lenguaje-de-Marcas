@@ -1,0 +1,28 @@
+
+#p1{
+    line-height: normal;
+    text-indent: 10%;
+    width: 75%;
+    font-style: italic;
+    font-size: em;
+    text-align: left;
+    text-transform: capitalize;
+}
+#p2{
+    line-height: 1.6;
+    text-indent: 30%;
+    width: 80%;
+    font-style: oblique;
+    font-size: 1.5em;
+    text-align: right;
+    text-transform: capitalize;
+}
+#p3{
+    line-height: 3;
+    text-indent: 10%;
+    width: 100%;
+    font-style:normal;
+    font-size: 1 em;
+    text-align: center;
+    text-transform: capitalize;
+}

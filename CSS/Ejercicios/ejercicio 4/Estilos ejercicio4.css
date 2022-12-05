@@ -1,0 +1,9 @@
+p{
+    background-color: gray;
+    color: blue;
+    border: 1px solid black
+}
+p#pares {background-color:yellow;}
+
+p#sexto{background-color: yellow;
+    font-size: 2em;}
