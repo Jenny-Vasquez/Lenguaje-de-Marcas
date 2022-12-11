@@ -52,13 +52,26 @@
             <label for="tamaño_bocadillo">Tamaño del bocadillo:</label><br><br>
             <select id="tamaño_bocadillo" size="4">
                 <option value="Pequeño">Pequeño</option>
-                <option value="Mediano" >Mediano</option>
+                <option value="Mediano" Selected="selected">Mediano</option>
                 <option value="Grande">Grande</option>
                 <option value="Enorme">Enorme</option>
             </select>
             <br>
             <br>
+            <label for="contenido_bocadillo">Contenido del bocadillo:</label><br><br>
+            <select id="contenido_bocadillo" size="4">
+                <option value="Anchoas">Anchoas</option>
+                <option value="Calamares">Calamares</option>
+                <option value="Mejillones">Mejillones</option>
+                <option value="Jamón">Jamón</option>
+            </select>
+            <br><br>
+            <label for="Sugerencias">Puede añadir alguna sugerencias:</label><br><br>
+            <textarea name="sugerencias" id="sugerencias" cols="40" rows="10" placeholder="Por ejemplo que calienten el pan."></textarea>
+            <br><br>
         </fieldset>
+        <br><br>
+        <input type="submit" value="Enviar datos">
     </form>
 </body>
 </html>
