@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: wheat;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ejercicio 16.css">
+</head>
+<body>
+    <div id ="cabecera">
+        <h1>TELEBIRRIA</h1>
+        <h2>Para realizar su pedido, rellene el formulario</h2>
+    </div>
+    <div id= "cabecera"> 
+       <h3>
+       <p>Si ya eres cliente introduzca su nombre de usuario y clave</p>
+        <label for="Usuario">Usuario</label><input type="text" id="usuario" name="usuario"><br>
+        <br>
+        <label for="Clave">Clave</label><input type="text" id="Clave" name="Clave"><input type="submit" value="Conectar">
+       </h3> 
+    </div>
+    <div id="izquierda">
+        <form action="">
+            <fieldset>
+                <legend>Datos personales y de envío</legend>
+                <br>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="Nombre" name="Nombre">
+                <br>
+                <br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="Apellido" name="Apellido">
+                <br>
+                <br>
+                <label for="domicilio">Domicilio:</label>
+                <input type="text" id="Domicilio" name="Domicilio">
+                <br>
+                <br>
+                <label for="localidad">Localidad:</label>
+                <input type="text" id="Localidad" name="Localidad" >
+                <br>
+                <br>
+                <label for="Código Postal">Código Postal:</label>
+                <input type="text" id="Código Postal" name="Código Postal">
+                <br>
+                <br>
+                <label for="teléfono">Teléfono:</label>
+                <input type="text" id="Teléfono" name="Teléfono" >
+                <br>
+                <br>
+            </fieldset>    
+            <fieldset>
+                <legend>Elija la opción de entrega</legend>
+                <br>
+                <input input="no" type="radio" id="recoger" name="nombre">
+                <label for="si">Recoger en el Local</label><br><br>
+                <input input="si" type="radio" id="envio" name="nombre">
+                <label for="no">Envio a domicilio</label><br>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>¿Quiere que le enviemos nuestras ofertas?</legend>
+                <br>
+                <input input="no" type="checkbox" id="recoger" name="nombre">
+                <label for="si">enviar a su domicilio</label><br><br>
+                <input input="si" type="checkbox" id="envio" name="nombre">
+                <label for="no">Enviar por email (introduzca su email)</label><br>
+                <label for="email">email:</label><br>
+                <input type="text" id="email" name="email" >
+            </fieldset>
+    </div>
+    <div id="derecha">
+        <fieldset>
+            <legend>Elija su menú</legend><br>
+            <label for="tamaño_bocadillo">Tamaño del bocadillo:</label><br><br>
+            <select id="tamaño_bocadillo" size="4">
+                <option value="Pequeño">Pequeño</option>
+                <option value="Mediano" Selected="selected">Mediano</option>
+                <option value="Grande">Grande</option>
+                <option value="Enorme">Enorme</option>
+            </select>
+            <br>
+            <br>
+            <label for="contenido_bocadillo">Contenido del bocadillo:</label><br><br>
+            <select id="contenido_bocadillo" size="4">
+                <option value="Anchoas">Anchoas</option>
+                <option value="Calamares">Calamares</option>
+                <option value="Mejillones">Mejillones</option>
+                <option value="Jamón">Jamón</option>
+            </select>
+            <br><br>
+            <label for="Sugerencias">Puede añadir alguna sugerencias:</label><br><br>
+            <textarea name="sugerencias" id="sugerencias" cols="40" rows="10" placeholder="Por ejemplo que calienten el pan."></textarea>
+        </fieldset>
+    </div>
+    <div id="pie">
+        <p>Para enviar el pedido ahora pulse el botón <input type="submit" value="Enviar pedido"> </p>
+        <p>Si quiere comenzar de nuevo pulse el botón <input type="reset" value="Borrar todo"> </p>
+    </div>
+</body>
+</html>
