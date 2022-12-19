@@ -1,8 +1,8 @@
 #cabecera{
-    width: auto;
+   
     height: 100px;
-    padding: 9px;
-    background-color:wheat;
+  
+    background-color:blanchedalmond;
 
 }
 #cabecera ul {
@@ -20,16 +20,19 @@ li a {
 #cabecera img{
     float: left;
 }
-#producto { 
-    background-color: beige;
+#producto{ 
+   
     width: 33%;
     height: 240px;
+    float:left;
+    
 }
 
 #articulo{
+
     float: left;
     width: 45%;
-    height: auto;
+    margin-left: 30px;
 }
 #articulo img{
     display: block;
@@ -69,3 +72,4 @@ li a {
     background-color:chocolate;
     margin-left: 10px;
 }
+
