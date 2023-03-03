@@ -1,0 +1,31 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    height: 70px;
+    line-height: 70px;
+    padding-left: 40px;
+    background:rgb(246, 210, 166);
+    color: cornflowerblue;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+article{
+    display: flex;
+    margin-top: 30px;
+    background: coral;
+}
+#no-wrap{flex-wrap: nowrap;}
+
+#wrap{
+    flex-wrap: wrap;
+}
+img{
+    border: dashed 1px cyan;
+    margin: 10px;
+    height: 200px;
+    width: 250px;
+}
