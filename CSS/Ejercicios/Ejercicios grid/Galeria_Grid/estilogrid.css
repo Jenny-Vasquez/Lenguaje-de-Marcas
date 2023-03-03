@@ -1,0 +1,35 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    background-color: #282c34;
+    font-family: sans-serif;
+    font-size: 3rem;
+  }
+  .contenedor-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    gap: 20px;
+    grid-auto-rows: minMax(200px, auto);
+    padding: 200px;
+  }
+  .contenedor{
+    border-radius: 20px;
+  }
+  .contenedor:hover{
+    opacity: .7;
+    transform: scale(1.1);
+  }
+  .dobleColumn{
+    grid-column: span 2;
+  }
+  .dobleFila{
+    grid-row: span 2;
+  }
+  .doble{
+    grid-column: span 2;
+    grid-row: span 2;
+  }
