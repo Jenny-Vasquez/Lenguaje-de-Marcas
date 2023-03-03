@@ -67,7 +67,7 @@ body {
   background-color: rgb(211, 242, 246);
 }
 
-
+@media (min-width: 1024px) {
 .grid-container {
   display: grid;
   gap: 10px;
@@ -78,7 +78,8 @@ body {
     "footer footer " 100px
     ;
 }
-
+}
+@media (min-width: 1024px) {
 .grid-container2 {
   display: grid;
   gap: 10px;
@@ -86,5 +87,5 @@ body {
     "box1 box1"
     "box2 box2"
     "box3 box3 "
-  
+}
 }

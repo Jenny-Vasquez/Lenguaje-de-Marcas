@@ -1,0 +1,26 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    padding: 30px;
+    background: rosybrown;
+    color:antiquewhite;
+    font-size: 3em;
+    font-weight: bold;
+}
+nav{
+    display: flex;
+    justify-content: flex-start;
+    background: blanchedalmond;
+}
+nav a{
+    color: rgb(53, 135, 135);
+    text-decoration: none;
+    padding: 15px;
+}
+nav a:hover{
+    background: brown;
+    color:chartreuse
+}

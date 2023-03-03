@@ -1,0 +1,47 @@
+
+body {
+    /* margin: 0; */
+    font-size: 4rem;
+    font-family: sans-serif;
+    background-color: #1d1818;
+  }
+  
+  .flex-container {
+    height: 500px;
+    background-color: #404040;
+    border-radius: 10px;
+    border: solid 2px yellow;
+    display: flex ; /* inline-flex la linea amarilla solo rodea los items*/
+                                  /*flex-direction: row;/*(row ordena en fila) column-> ordena los items por columnas*/
+                                  /*flex-wrap: wrap;*/
+    justify-content:flex-start;
+    align-items: center;/*strech ocupa todo el ancho estira el item*/
+    /*align-content: center;*/
+    flex-flow:row wrap ;/*equivale a flex-direcion, flex wrap*/
+  }
+  
+  .flex-container > * {
+    padding: 10px;
+    margin: 10px;
+    border: solid 1px black;
+    border-radius: 10px;
+    background: #f18c55;
+  }
+/*PROPIEDAD DE LOS ITEMS*/
+  .one{
+    order: 5; /*ordena los itemns */
+    /* align-self: flex-start; */
+    height: 100px;
+
+  }
+  .two{
+    order: 0;
+    /* align-self: flex-end; */
+    height: 100px;
+    margin-left: auto;
+  }
+  .three{
+    order: -1;
+    height: 100px;
+  }
+  
