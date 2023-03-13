@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mensaje xmlns:correo="correoEjercicio4">
+    <correo:remitente>
+        <correo:nombre></correo:nombre>
+        <correo:email></correo:email>
+    </correo:remitente>
+    <correo:destinatario>
+        <correo:nombre></correo:nombre>
+        <correo:email></correo:email>
+    </correo:destinatario>
+    <correo:asunto></correo:asunto>
+    <correo:texto>
+        <correo:parrafo></correo:parrafo>
+        <correo:parrafo></correo:parrafo>
+        <correo:parrafo></correo:parrafo>
+    </correo:texto>
+</mensaje>
