@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="curriculum">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="datos_personales">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="apellidos" type="xs:string" />
+                            <xs:element name="fecha_nacimiento" type="xs:string" />
+                            <xs:element name="lugar_nacimiento" type="xs:string" />
+                            <xs:element name="nacionalidades">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nacionalidad" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="identificacion">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="tipo" use="required" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="foto" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="datos_contacto">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="via">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="tipo" use="required" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="nombre_via" type="xs:string" />
+                            <xs:element name="numero" type="xs:string" />
+                            <xs:element name="portal" type="xs:string" />
+                           <xs:element name="piso" type="xs:string" />
+                            <xs:element name="puerta" type="xs:string" />
+                            <xs:element name="codigo_postal" type="xs:string" />
+                            <xs:element name="pais" type="xs:string" />
+                            <xs:element name="email">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="tipo" use="required" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="telefono_movil">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="tipo" use="required" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="telefono_fijo">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="tipo" use="required" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="datos_contacto_adicionales">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="redes_sociales">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="red_social" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="formacion_academica">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="superior">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string" />
+                                        <xs:element name="lugar" type="xs:string" />
+                                        <xs:element name="fecha_inicio" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+                            <xs:element name="FP">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string" />
+                                        <xs:element name="lugar" type="xs:string" />
+                                        <xs:element name="fecha_inicio" type="xs:string" />
+                                        <xs:element name="fecha_fin" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="idiomas">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="idioma">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string" />
+                                        <xs:element name="nivel_expresion_oral" type="xs:string" />
+                                        <xs:element name="nivel_comprension_oral" type="xs:string" />
+                                        <xs:element name="nivel_expresion_escrita" type="xs:string" />
+                                        <xs:element name="nivel_comprension_escrita"
+                                            type="xs:string" />
+                                        <xs:element name="titulo_acreditativo" type="xs:string" />
+                                        <xs:element name="nivel_titulo" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="experiencia_laboral">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="experiencia">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="lugar" type="xs:string" />
+                                        <xs:element name="puesto" type="xs:string" />
+                                        <xs:element name="fecha_inicio" type="xs:string" />
+                                        <xs:element name="fecha_fin" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="datos_adicionales">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="aficiones" type="xs:string" />
+                            <xs:element name="disponibilidad_para_viajar" type="xs:string" />
+                            <xs:element name="vehiculo_propio" type="xs:string" />
+                            <xs:element name="licencias_conduccion">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="licencia" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
